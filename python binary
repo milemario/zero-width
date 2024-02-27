@@ -1,0 +1,10 @@
+def string_to_binary(input_string):
+    # Convert each character in the string to its binary representation
+    binary_string = ' '.join(format(ord(char), '08b') for char in input_string)
+    return binary_string
+
+# Example usage
+input_text = "Hello, World!"
+binary_representation = string_to_binary(input_text)
+print(f"Original Text: {input_text}")
+print(f"Binary Representation: {binary_representation}")
